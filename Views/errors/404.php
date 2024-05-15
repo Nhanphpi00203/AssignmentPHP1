@@ -1,1 +1,1 @@
-<h2 style="color: red;direction: rtl;text-align: center">Page Not Found</h2>
+<h2 style="color: red;direction: rtl;text-align: center">Khong tim thay trang - 404</h2>

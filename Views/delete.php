@@ -1,5 +1,5 @@
 <?php 
-require("database.php");
+require("../Models/database.php");
 
 if (isset($_GET['id'])) {
     // Delete record

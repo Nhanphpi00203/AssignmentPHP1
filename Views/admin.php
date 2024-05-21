@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["user_id"])){
-    $mysqli = require __DIR__ . "/database.php";
+    $mysqli = require "../Models/database.php";
 
     $sql = "SELECT * FROM user
             WHERE user_id = {$_SESSION["user_id"]}";
@@ -27,7 +27,7 @@ header("location: main.php");
 </head>
 <body>
     <div class="container">
-    <a href="./login.php"><img onclick="" class="account" src="/lab/assignment/img/account.webp" width="40px" height="40px" alt=""></a>
+    <a href="./login.php"><img onclick="" class="account" src="./img/account.webp" width="40px" height="40px" alt=""></a>
 
         <hr>
         <div class="header">
@@ -61,7 +61,7 @@ header("location: main.php");
                     <tbody>
 <?php
 
-require("database.php");
+require("../Models/database.php");
 
 
     $sql = "SELECT *

@@ -20,5 +20,5 @@ if(isset($_POST["submit"]))
     $signup->signupUser();
 
     //
-    // header("location: main.php");
+    header("location: main.php");
 }

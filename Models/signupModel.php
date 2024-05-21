@@ -5,29 +5,46 @@ class signup extends database {
 
     
     public function setUser($name, $email ,$password) {
-       
+        
         $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO user (username, email, password_hash)
-        VALUES (?, ?, ?)";
+        try{
 
-        $stmt = $this->connect()->prepare($sql);
-     
+            $sql = "INSERT INTO user (username, email, password_hash)
+            VALUES (?, ?, ?)";
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->bindParam(1, $name);
+            $stmt->bindParam(2, $email);
+            $stmt->bindParam(3, $password);
+            $stmt->execute();
+
+        }
+        catch (PDOException $e) {
+
+            die("ERROR: " . $e->getMessage());
+        }
+
+
+
+        
+       
+        
+        // $stmt = $this->connect()->stmt_init();
         // $stmt = mysqli_query($this->conn, $sql);
+        // if ( !$stmt->prepare($sql)) {
+        //     die("SQL error: " . $this->connect()->error);
+        //     }
         
-        
-        
-        // $stmt->bind_param("sss",
-        //     $name, $email, $password);
+        // $stmt->bind_param("sss",$name, $email, $password);
 
-        $stmt->execute();
+        //     $stmt->execute();
+                
 
-
-        // if ($stmt->execute()) {
+        // // if ($stmt->execute()) {
         //         exit();
-        // }
+        // // }
 
-        $stmt = null;
+        // $stmt = null;
     }
 
 

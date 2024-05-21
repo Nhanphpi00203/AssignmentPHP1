@@ -1,22 +1,11 @@
-<?php
-session_start();
 
-if (isset($_SESSION["user_id"])){
-    $mysqli = require "../Models/database.php";
-
-    $sql = "SELECT * FROM user
-            WHERE user_id = {$_SESSION["user_id"]}";
-
-    $result = $mysqli->query($sql);
-
-    $user = $result->fetch_assoc();
-}  
-
-?>
 
 
 
 <?php
+
+
+
 
 // if (empty($_POST["name"])) {
 //     die("Name is required");
@@ -38,7 +27,7 @@ if (isset($_SESSION["user_id"])){
 //     die("Password must contain at least one number");
 // }
 
-if ($_POST["password"] !== $_POST["password_confirmation"]) {
+if ($_POST["password"] !== $_POST["password_rp"]) {
     die("Passwords must match");
 }
 

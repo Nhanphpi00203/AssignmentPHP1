@@ -27,7 +27,7 @@
         </div>
         <div class="body">
             <hr>
-            <form action="regist.php" method="POST" novalidate>
+            <form action="./signup-inc.php" method="POST" novalidate>
                 <div class="register">
                     <h2>register</h2>
                     Username <br>
@@ -38,8 +38,8 @@
                     <input type="password" name="password">
                     <br>
                     comfirmpassword <br>
-                    <input type="password" name="password_confirmation"> <br>
-                    <button type="submit" name="regist">Register</button>
+                    <input type="password" name="password_rp"> <br>
+                    <button type="submit" name="submit">Signup</button>
                     </form>
                 </div>
     

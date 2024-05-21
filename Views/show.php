@@ -1,6 +1,6 @@
 <?php
 
-require("database.php");
+require("../Models/database.php");
 
 
     $sql = "SELECT *

@@ -44,6 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             header("Location: main.php");
             exit;
         }
+        else {
+            return $is_invalid;
+        }
     }
     
     $is_invalid = true;

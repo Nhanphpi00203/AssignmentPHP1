@@ -23,12 +23,7 @@ class signup extends database {
 
             die("ERROR: " . $e->getMessage());
         }
-
-
-
-        
-       
-        
+  
         // $stmt = $this->connect()->stmt_init();
         // $stmt = mysqli_query($this->conn, $sql);
         // if ( !$stmt->prepare($sql)) {

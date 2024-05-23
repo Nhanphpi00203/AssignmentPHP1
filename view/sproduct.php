@@ -146,7 +146,7 @@
 </div>
 
         <section id="product1" class="section-p1">
-            <h2>Sản Phẩm Liên Quan</h2>
+            <h2>Sản Phẩm Có Liên Quan</h2>
             <!-- <p>Summer Collection New Morden Design</p> -->
             <div class="pro-container">
                 <?=$html_dssp_splq?>

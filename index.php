@@ -2,14 +2,14 @@
 session_start();
 ob_start();
 
-include "dao/pdo.php";
-include "dao/user.php";
-include "dao/bill.php";
-include "dao/comment.php";
-include "dao/check.php";
-include "dao/danhmuc.php";
-include "dao/sanpham.php";
-include "dao/giohang.php";
+include "model/pdo.php";
+include "model/user-Model.php";
+include "model/bill.php";
+include "model/comment.php";
+include "model/check.php";
+include "model/danhmuc.php";
+include "model/sanpham.php";
+include "model/giohang.php";
 include "view/header.php";
 
 $is_user_logged_in = is_user_logged_in();

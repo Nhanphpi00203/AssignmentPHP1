@@ -53,7 +53,7 @@
     <div class="slider-container">
     <div class="text-container">
   <h5 style="color: white;">Chào Mừng Đến Với YAME</h5>
-  <h4 style="color: white;">Ưu Đãi Siêu Giá Trị</h4>
+  <h4 style="color: white;">Nhiều Ưu Đãi Siêu Giá Trị</h4>
   <h2 style="color: white;">Trên Tất Cả Sản Phẩm</h2>
   <p style="color: gray;">Tiết kiệm nhiều hơn với phiếu giảm giá và giảm giá tới 70%!</p>
   <a href="index.php?pg=shop"><button>Mua Ngay</button></a>

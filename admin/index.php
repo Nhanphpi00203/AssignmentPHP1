@@ -2,13 +2,13 @@
 session_start();
 ob_start();
 
-include "../dao/pdo.php";
-include "../dao/danhmuc.php";
-include "../dao/user.php";
-include "../dao/bill.php";
-include "../dao/sanpham.php";
-include "../dao/thong-ke.php";
-include "../dao/comment.php";
+include "../model/pdo.php";
+include "../model/danhmuc.php";
+include "../model/user-Model.php";
+include "../model/bill.php";
+include "../model/sanpham.php";
+include "../model/thong-ke.php";
+include "../model/comment.php";
 include "view/header.php";
 
 $dsdm_categories = get_danhmuc();
